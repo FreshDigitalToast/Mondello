@@ -1,0 +1,498 @@
+/*! 
+ * reset.css 
+ * Adjustments of the Bootstrap CSS to make it work for WordPress 
+ */
+
+.col-lg-9 {
+  margin-top:30px;
+}
+.col-lg-12 {
+  margin-top:30px;
+}
+footer .col-lg-12, .footer > .col-lg-12 {
+  margin-top:0px;
+}
+
+/*! 
+** Add custom CSS below.
+**/
+@font-face {
+  font-family: 'RNS Camelia';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/wp-content/themes/mondello-theme/assets/fonts/RNS_Camelia.woff');
+}
+@font-face {
+  font-family: 'Geometria Light';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/wp-content/themes/mondello-theme/assets/fonts/30DA92_0_0.woff');
+}
+@font-face {
+  font-family: 'ITC Caslon Bold Italic';
+  font-style: normal;
+  font-weight: normal;
+  src: url('/wp-content/themes/mondello-theme/assets/fonts/30E558_0_0.woff');
+}
+html, body {
+  font-family:'RNS Camelia';
+  font-size: 16px;
+  color: #20211F;
+}
+
+
+/**********************
+***** Slide Style *****
+**********************/
+#slides h2 {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  top: 10%;
+}
+#slides .home-address {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  bottom: 15%;
+}
+#slides .slide-arrow-down {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  bottom: 5%;
+}
+#slides .slide-arrow-down a {
+  font-size: 70px;
+  color: #fff;
+}
+#slides .slide-arrow-down a:hover {
+  color: #F6EB45;
+}
+#slides2 img {
+  max-width: 100%;
+}
+.slide-wrap {
+  border: 30px solid #fff;
+  right: -15px;
+}
+
+
+/*************************
+***** Section2 Style *****
+*************************/
+#section2 {
+  padding: 0px 0px;
+}
+#section2 img {
+  max-width: 100%;
+}
+.logo {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 57%;
+  padding-right: 15px;
+}
+.logo img {
+  margin-top: 0%;
+}
+.tagline {
+  font-family: 'RNS Camelia';
+  font-size: 26px;
+  padding: 0 15%;
+  text-align: center;
+  letter-spacing: 4px;
+  line-height: 1.5;
+  position: absolute;
+  bottom: 30%;
+  max-width: 100%;
+}
+.register-button {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  width: 125%;
+  background: #F6EB45;
+  z-index: 3;
+  color: #20211F;
+  padding: 15px 0 22px 0;
+  text-align: center;
+  border: 0px;
+}
+.register-button:hover {
+  background: #20211F;
+  color: #FFF;
+  text-decoration: none;
+}
+a.register-button span,
+button.register-button span {
+  text-transform: uppercase;
+  border-bottom: 3px solid #20211F;
+  margin-left: -20%;
+  transition: 0.3s;
+  font-size: 20px;
+  font-family: 'Geometria Light';
+}
+a.register-button:hover span,
+button.register-button:hover span {
+  border-bottom: 3px solid #FFF;
+}
+
+/*****************************************
+***** Form ToggleText Section2 Style *****
+*****************************************/
+#toggleText {
+  max-width: 100%;
+}
+.form-input h2 {
+  margin: 0 0 50px 0;
+  font-family: 'ITC Caslon Bold Italic';
+  font-size: 64px;
+}
+.displayText-wrap { /* "X" symbol */
+  position: absolute;
+  top: 3%;
+  right: 2%;
+  z-index: 9;
+  text-align: right;
+  width: 30px;
+  height: 30px;
+}
+.displayText-wrap a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  background: url(/wp-content/uploads/2016/04/close-icon.png) no-repeat;
+  float: right;
+}
+.displayText-wrap a:hover {
+  background: url(/wp-content/uploads/2016/04/close-icon.png) no-repeat bottom;
+}
+.form-input {
+  position: absolute;
+  bottom: 35%;
+  left: 5%;
+  width: 92%;
+  max-width: 92%;
+  color: #20211F;
+}
+.border-bottom {
+  border-bottom: 2px solid #20211F;
+  margin: 40px 0;
+  padding-bottom: 2px;
+}
+.form-input label,
+.form-input .bed-sty {
+  font-family: 'Geometria Light';
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 18px;
+  font-weight: 300;
+  display: inline-block;
+}
+.form-input label {
+  width: 25%;
+}
+.form-input .bed-sty {
+  min-width: 25%;
+}
+.form-input input {
+  display: inline-block;
+  width: 72%;
+  border: 0px;
+}
+.wpcf7-list-item {
+  margin-right: 5%;
+  font-size: 18px;
+}
+.form-bottom {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+}
+.form-bottom .register-button {
+  position: relative;
+  left: 0%;
+}
+.disclaimer {
+  position: relative;
+  text-align: center;
+  font-size: 12px;
+}
+.disclaimer a {
+  color: #000;
+  text-decoration: underline;
+}
+span.wpcf7-not-valid-tip {
+  display: inline-block;
+  float: right;
+}
+div.wpcf7-mail-sent-ok {
+  font-family: 'ITC Caslon Bold Italic';
+  font-size: 22px;
+  z-index: 9;
+  background: #FFF;
+  border: 0px;
+  padding: 0px;
+  margin: 10px 0px;
+}
+
+/*****************
+*** Responsive ***
+*****************/
+@media (max-width: 1366px) {
+  .tagline {
+    font-size: 18px;
+  }
+}
+@media (max-width:1280px) {
+  .logo {
+    margin-top: 30px;
+  }
+  .tagline {
+    margin: 50px 0;
+    bottom: 20%;
+    padding: 0% 10%;
+    font-size: 20px;
+  }
+  .wpcf7-form-control-wrap {
+    display: inline-block;
+    max-width: 72%;
+  }
+  .form-input h2 {
+    font-size: 36px;
+  }
+  .form-check .wpcf7-form-control-wrap {
+    max-width: 55%;
+    width: 55%;
+  }
+  .disclaimer {
+    position: absolute;
+    bottom: 22%;
+  }
+  .form-bottom {
+    width: 100%;
+  }
+  .disclaimer {
+    position: relative;
+  }
+}
+@media (max-width:1224px) {
+  .tagline {
+    font-size: 18px;
+  }
+}
+@media (max-width:1048px) {
+  .tagline {
+    bottom: 30%;
+  }
+}
+@media (max-width:1024px) {
+  .logo {
+    position: relative;
+    margin-top: 30px;
+    padding: 0px;
+  }
+  .tagline {
+    padding: 15% 13%;
+  }
+  .form-input h2 {
+    font-size: 40px;
+  }
+  .form-input label,
+  .form-input .bed-sty {
+    font-size: 14px;
+  }
+  .wpcf7-list-item {
+    margin-right: 0%;
+    font-size: 14px;
+  }
+}
+
+@media (max-width:991px) { /* Mobile Breakpoint */
+  .tagline {
+    position: relative;
+  }
+  .form-input {
+    position: relative;
+    left: 0;
+  }
+  .disclaimer {
+    position: relative;
+  }
+  .register-button {
+    position: relative;
+    width: 100%;
+    display: block;
+    left: 0;
+    bottom: 0;
+    margin-bottom: 30px;
+  }
+  a.register-button span,
+  button.register-button span {
+    margin-left: 0%;
+  }
+  .slide-col {
+    padding-bottom: 15px;
+  }
+  .slide-wrap {
+    right: 0px;
+    border: 0px;
+  }
+  .form-bottom {
+    position: relative;
+    left: 0%;
+  }
+  .form-bottom .register-button {
+    margin-bottom: 0px;
+  }
+}
+@media (max-width:800px) {
+  #slides h2 img {
+    max-width: 80%;
+  }
+  #slides .home-address {
+    bottom: 15%;
+  }
+  #slides .home-address img {
+    max-width: 45%;
+  }
+  #slides .slide-arrow-down a {
+    font-size: 50px;
+    line-height: 1;
+  }
+  #section2 .content-wrap {
+    height: auto;
+    min-height: 1px;
+  }
+  .logo {
+    max-width: 100%;
+    top: 0%;
+    padding: 0%;
+    position: relative;
+  }
+  .tagline {
+    font-size: 26px;
+    margin: 40px 0;
+    top: auto;
+    position: relative;
+  }
+  .form-check {
+    font-size: 80%;
+  }
+  .displayText-wrap {
+    position: relative;
+    display: block;
+    text-align: right;
+    width: 100%;
+    top: 0;
+    right: 0;
+  }
+  .form-input {
+    position: relative;
+    left: 0%;
+  }
+  .form-input h2 {
+    font-size: 48px;
+  }
+  .form-input label,
+  .form-input .bed-sty {
+    font-size: 14px;
+  }
+  .form-input input {
+    width: 99%;
+  }
+  .wpcf7-list-item {
+    margin-right: 0%;
+    font-size: 14px;
+  }
+  .register-button {
+    position: relative;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    display: block;
+    margin-bottom: 20px;
+  }
+  a.register-button span,
+  button.register-button span {
+    margin: 0px;
+  }
+  .disclaimer {
+    position: relative;
+  }
+}
+
+@media (orientation : landscape) and (max-width : 786px) {
+  #slides h2 img {
+    max-width: 40%;
+  }
+  #slides .home-address img {
+    max-width: 13%;
+  }
+  #slides .slide-arrow-down a {
+    font-size: 30px;
+    line-height: 1;
+  }
+}
+
+@media (max-width: 480px) {
+  #slides h2 img {
+      max-width: 60%;
+  }
+  #slides .home-address img {
+      max-width: 20%;
+  }
+  .tagline {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+
+}
+
+@media (max-width: 320px) {
+  .form-input h2 {
+      font-size: 36px;
+  }
+}
+
+
+
+/*************************
+***** Checkbox Style *****
+**************************/
+input[type=checkbox].css-checkbox {
+  position:absolute; z-index:-1000; left:-1000px; overflow: hidden; clip: rect(0 0 0 0); height:1px; width:1px; margin:-1px; padding:0; border:0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+  padding-left:20px;
+  width: auto;
+  height:15px;
+  display:inline-block;
+  line-height:15px;
+  background-repeat:no-repeat;
+  background-position: 0 0;
+  font-size:15px;
+  vertical-align:middle;
+  cursor:pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+  background-position: 0 -15px;
+}
+label.css-label {
+  background-image:url(/wp-content/themes/mondello-theme/assets/img/checkbox.png);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
